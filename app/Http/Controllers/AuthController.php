@@ -60,7 +60,8 @@ class AuthController extends Controller
             'email' => $user->email
         ]);
 
-        echo 'Login com sucesso';
+        //redirect to home
+        return redirect()->to('/');
 
     }
 
